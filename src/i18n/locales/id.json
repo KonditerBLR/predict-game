@@ -1,0 +1,75 @@
+{
+  "app": {
+    "title": "Prediction Master",
+    "subtitle": "Uji Keberuntungan Anda!"
+  },
+  "profile": {
+    "level": "Level {{level}}",
+    "coins": "{{coins}} Koin",
+    "energy": "{{current}}/{{max}} Energi",
+    "xp": "{{current}}/{{required}} XP"
+  },
+  "games": {
+    "card": {
+      "name": "Warna Kartu",
+      "description": "Prediksi Merah atau Hitam",
+      "red": "Merah",
+      "black": "Hitam",
+      "multiplier": "2x"
+    },
+    "dice": {
+      "name": "Permainan Dadu",
+      "description": "Prediksi Rendah/Tengah/Tinggi",
+      "low": "Rendah (1-2)",
+      "middle": "Tengah (3-4)",
+      "high": "Tinggi (5-6)",
+      "multiplier": "Hingga 3x",
+      "unlockLevel": "Buka di Level 3"
+    },
+    "number": {
+      "name": "Rentang Angka",
+      "description": "Tebak 1-10",
+      "multiplier": "10x",
+      "unlockLevel": "Buka di Level 5"
+    }
+  },
+  "actions": {
+    "play": "Main",
+    "placeBet": "Pasang Taruhan",
+    "playAgain": "Main Lagi",
+    "backToHome": "Kembali ke Beranda",
+    "watchAd": "Tonton Iklan",
+    "claimBonus": "Klaim Bonus",
+    "selectAmount": "Pilih Jumlah Taruhan"
+  },
+  "result": {
+    "win": "Anda Menang!",
+    "lose": "Anda Kalah",
+    "won": "Menang {{amount}} koin",
+    "lost": "Kalah {{amount}} koin",
+    "xpGained": "+{{xp}} XP"
+  },
+  "status": {
+    "locked": "Terkunci",
+    "unlocked": "Terbuka",
+    "notEnoughCoins": "Koin tidak cukup",
+    "notEnoughEnergy": "Energi tidak cukup",
+    "energyRegenIn": "Regenerasi energi dalam {{time}}"
+  },
+  "ads": {
+    "watchForCoins": "Tonton Iklan untuk +50 Koin",
+    "watchForEnergy": "Tonton Iklan untuk +1 Energi",
+    "loading": "Memuat iklan..."
+  },
+  "affiliate": {
+    "title": "Main di Battery Casino",
+    "bonus": "Dapatkan Bonus Selamat Datang $30!",
+    "cta": "Klaim Bonus Sekarang"
+  },
+  "levelUp": {
+    "title": "Naik Level!",
+    "message": "Anda mencapai Level {{level}}",
+    "newGameUnlocked": "Permainan baru terbuka!",
+    "rewards": "Hadiah: +{{coins}} Koin"
+  }
+}

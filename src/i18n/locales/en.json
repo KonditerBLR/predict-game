@@ -1,0 +1,75 @@
+{
+  "app": {
+    "title": "Prediction Master",
+    "subtitle": "Test Your Luck!"
+  },
+  "profile": {
+    "level": "Level {{level}}",
+    "coins": "{{coins}} Coins",
+    "energy": "{{current}}/{{max}} Energy",
+    "xp": "{{current}}/{{required}} XP"
+  },
+  "games": {
+    "card": {
+      "name": "Card Color",
+      "description": "Predict Red or Black",
+      "red": "Red",
+      "black": "Black",
+      "multiplier": "2x"
+    },
+    "dice": {
+      "name": "Dice Game",
+      "description": "Predict Low/Middle/High",
+      "low": "Low (1-2)",
+      "middle": "Middle (3-4)",
+      "high": "High (5-6)",
+      "multiplier": "Up to 3x",
+      "unlockLevel": "Unlocks at Level 3"
+    },
+    "number": {
+      "name": "Number Range",
+      "description": "Guess 1-10",
+      "multiplier": "10x",
+      "unlockLevel": "Unlocks at Level 5"
+    }
+  },
+  "actions": {
+    "play": "Play",
+    "placeBet": "Place Bet",
+    "playAgain": "Play Again",
+    "backToHome": "Back to Home",
+    "watchAd": "Watch Ad",
+    "claimBonus": "Claim Bonus",
+    "selectAmount": "Select Bet Amount"
+  },
+  "result": {
+    "win": "You Win!",
+    "lose": "You Lose",
+    "won": "Won {{amount}} coins",
+    "lost": "Lost {{amount}} coins",
+    "xpGained": "+{{xp}} XP"
+  },
+  "status": {
+    "locked": "Locked",
+    "unlocked": "Unlocked",
+    "notEnoughCoins": "Not enough coins",
+    "notEnoughEnergy": "Not enough energy",
+    "energyRegenIn": "Energy regen in {{time}}"
+  },
+  "ads": {
+    "watchForCoins": "Watch Ad for +50 Coins",
+    "watchForEnergy": "Watch Ad for +1 Energy",
+    "loading": "Loading ad..."
+  },
+  "affiliate": {
+    "title": "Play at Battery Casino",
+    "bonus": "Get $30 Welcome Bonus!",
+    "cta": "Claim Bonus Now"
+  },
+  "levelUp": {
+    "title": "Level Up!",
+    "message": "You reached Level {{level}}",
+    "newGameUnlocked": "New game unlocked!",
+    "rewards": "Rewards: +{{coins}} Coins"
+  }
+}
