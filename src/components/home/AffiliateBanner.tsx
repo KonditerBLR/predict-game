@@ -1,5 +1,5 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Trophy } from 'lucide-react';
 import { Card, Button } from '@/components/common';
 
 const AFFILIATE_URL = 'https://battery.casino/?ref=prediction-master';
@@ -19,7 +19,11 @@ export const AffiliateBanner: React.FC = () => {
   return (
     <Card className="bg-gradient-to-r from-accent-gold/20 to-accent-green/20 border-accent-gold/50 mt-6">
       <div className="text-center">
-        <div className="text-5xl mb-3">🎰</div>
+        <div className="mb-3 flex justify-center">
+          <div className="p-3 bg-accent-gold/20 rounded-full">
+            <Trophy className="w-12 h-12 text-accent-gold" />
+          </div>
+        </div>
         <h3 className="text-xl font-bold text-white mb-2">
           {t('affiliate.title')}
         </h3>
@@ -32,7 +36,7 @@ export const AffiliateBanner: React.FC = () => {
           size="lg"
           fullWidth
         >
-          {t('affiliate.cta')} ⭐
+          {t('affiliate.cta')}
         </Button>
       </div>
     </Card>

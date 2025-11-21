@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Coins, Zap } from 'lucide-react';
 import { useUserStore } from '@/store/userStore';
 import { getXPProgress } from '@/utils/levelSystem';
 import { getTimeUntilNextEnergy, formatTime } from '@/utils/energySystem';
@@ -27,15 +28,17 @@ export const ProfileBar: React.FC = () => {
     <div className="bg-app-card border-2 border-app-border rounded-2xl p-6 mb-6">
       {/* Top Row - Coins and Energy */}
       <div className="flex items-center justify-between mb-4">
-        <div className="flex items-center gap-2">
-          <span className="text-3xl">💰</span>
+        <div className="flex items-center gap-3">
+          <div className="p-2 bg-accent-gold/10 rounded-lg">
+            <Coins className="w-8 h-8 text-accent-gold" />
+          </div>
           <div>
             <p className="text-xs text-gray-400">Coins</p>
             <p className="text-2xl font-bold text-accent-gold">{coins.toLocaleString()}</p>
           </div>
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-3">
           <div className="text-right">
             <p className="text-xs text-gray-400">Energy</p>
             <p className="text-2xl font-bold text-accent-green">
@@ -45,7 +48,9 @@ export const ProfileBar: React.FC = () => {
               <p className="text-xs text-gray-400">{timeUntilEnergy}</p>
             )}
           </div>
-          <span className="text-3xl">⚡</span>
+          <div className="p-2 bg-accent-green/10 rounded-lg">
+            <Zap className="w-8 h-8 text-accent-green" />
+          </div>
         </div>
       </div>
 

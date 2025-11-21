@@ -1,5 +1,5 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Gamepad2, Lock, Coins } from 'lucide-react';
 import { useUserStore } from '@/store/userStore';
 import { useGameStore } from '@/store/gameStore';
 import { isGameUnlocked } from '@/utils/levelSystem';
@@ -19,8 +19,9 @@ export const GameMenu: React.FC = () => {
 
   return (
     <div className="space-y-4">
-      <h2 className="text-2xl font-bold text-white mb-4">
-        🎮 {t('actions.play')}
+      <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-2">
+        <Gamepad2 className="w-7 h-7 text-accent-green" />
+        {t('actions.play')}
       </h2>
 
       <div className="grid gap-4">
@@ -41,7 +42,9 @@ export const GameMenu: React.FC = () => {
               {!unlocked && (
                 <div className="absolute inset-0 bg-black/60 flex items-center justify-center z-10 backdrop-blur-sm">
                   <div className="text-center">
-                    <div className="text-4xl mb-2">🔒</div>
+                    <div className="mb-3 flex justify-center">
+                      <Lock className="w-12 h-12 text-accent-red" />
+                    </div>
                     <p className="text-sm font-semibold text-white">
                       {t('status.locked')}
                     </p>
@@ -66,8 +69,8 @@ export const GameMenu: React.FC = () => {
                     <span className="px-3 py-1 bg-accent-green/20 text-accent-green rounded-full font-semibold">
                       {game.multiplier}x
                     </span>
-                    <span className="text-gray-400">
-                      Min bet: {game.minBet} 💰
+                    <span className="flex items-center gap-1 text-gray-400">
+                      Min bet: {game.minBet} <Coins className="w-3 h-3" />
                     </span>
                   </div>
                 </div>
