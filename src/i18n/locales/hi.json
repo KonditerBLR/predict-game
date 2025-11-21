@@ -1,0 +1,75 @@
+{
+  "app": {
+    "title": "प्रेडिक्शन मास्टर",
+    "subtitle": "अपनी किस्मत आजमाएं!"
+  },
+  "profile": {
+    "level": "लेवल {{level}}",
+    "coins": "{{coins}} सिक्के",
+    "energy": "{{current}}/{{max}} ऊर्जा",
+    "xp": "{{current}}/{{required}} XP"
+  },
+  "games": {
+    "card": {
+      "name": "कार्ड रंग",
+      "description": "लाल या काला अनुमान लगाएं",
+      "red": "लाल",
+      "black": "काला",
+      "multiplier": "2x"
+    },
+    "dice": {
+      "name": "पासा खेल",
+      "description": "कम/मध्यम/उच्च का अनुमान",
+      "low": "कम (1-2)",
+      "middle": "मध्यम (3-4)",
+      "high": "उच्च (5-6)",
+      "multiplier": "3x तक",
+      "unlockLevel": "लेवल 3 पर अनलॉक"
+    },
+    "number": {
+      "name": "संख्या रेंज",
+      "description": "1-10 का अनुमान",
+      "multiplier": "10x",
+      "unlockLevel": "लेवल 5 पर अनलॉक"
+    }
+  },
+  "actions": {
+    "play": "खेलें",
+    "placeBet": "बेट लगाएं",
+    "playAgain": "फिर से खेलें",
+    "backToHome": "होम पर वापस",
+    "watchAd": "विज्ञापन देखें",
+    "claimBonus": "बोनस क्लेम करें",
+    "selectAmount": "बेट राशि चुनें"
+  },
+  "result": {
+    "win": "आप जीते!",
+    "lose": "आप हारे",
+    "won": "{{amount}} सिक्के जीते",
+    "lost": "{{amount}} सिक्के हारे",
+    "xpGained": "+{{xp}} XP"
+  },
+  "status": {
+    "locked": "लॉक",
+    "unlocked": "अनलॉक",
+    "notEnoughCoins": "पर्याप्त सिक्के नहीं",
+    "notEnoughEnergy": "पर्याप्त ऊर्जा नहीं",
+    "energyRegenIn": "{{time}} में ऊर्जा पुनर्जीवन"
+  },
+  "ads": {
+    "watchForCoins": "+50 सिक्कों के लिए विज्ञापन देखें",
+    "watchForEnergy": "+1 ऊर्जा के लिए विज्ञापन देखें",
+    "loading": "विज्ञापन लोड हो रहा है..."
+  },
+  "affiliate": {
+    "title": "Battery Casino पर खेलें",
+    "bonus": "$30 वेलकम बोनस पाएं!",
+    "cta": "अभी बोनस क्लेम करें"
+  },
+  "levelUp": {
+    "title": "लेवल अप!",
+    "message": "आप लेवल {{level}} पर पहुंच गए",
+    "newGameUnlocked": "नया खेल अनलॉक!",
+    "rewards": "पुरस्कार: +{{coins}} सिक्के"
+  }
+}
