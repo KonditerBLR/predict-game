@@ -31,14 +31,14 @@ export const Modal: React.FC<ModalProps> = ({
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 animate-fade-in">
-      {/* Backdrop */}
+      {/* Backdrop with blur */}
       <div
-        className="absolute inset-0 bg-black/80 backdrop-blur-sm"
+        className="absolute inset-0 bg-black/80 backdrop-blur-md"
         onClick={onClose}
       />
 
-      {/* Modal Content */}
-      <div className="relative bg-app-card border-2 border-app-border rounded-2xl p-6 max-w-md w-full shadow-2xl animate-bounce-in">
+      {/* Modal Content with scale-in animation */}
+      <div className="relative bg-app-card border-2 border-app-border rounded-2xl p-6 max-w-md w-full shadow-card-hover animate-scale-in">
         {/* Header */}
         {(title || showCloseButton) && (
           <div className="flex items-center justify-between mb-4">
@@ -46,7 +46,7 @@ export const Modal: React.FC<ModalProps> = ({
             {showCloseButton && (
               <button
                 onClick={onClose}
-                className="text-gray-400 hover:text-white transition-colors p-2"
+                className="text-gray-400 hover:text-white transition-all duration-200 p-2 hover:scale-110"
               >
                 <svg
                   className="w-6 h-6"
