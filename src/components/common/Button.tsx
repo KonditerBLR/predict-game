@@ -19,13 +19,13 @@ export const Button: React.FC<ButtonProps> = ({
   size = 'md',
   className = '',
 }) => {
-  const baseStyles = 'font-bold rounded-lg transition-all duration-200 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed disabled:active:scale-100';
+  const baseStyles = 'font-bold rounded-lg transition-all duration-300 active:scale-95 hover:-translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed disabled:active:scale-100 disabled:hover:translate-y-0';
 
   const variants = {
-    primary: 'bg-accent-green text-app-bg hover:bg-accent-green/90 shadow-lg shadow-accent-green/30',
-    secondary: 'bg-app-card text-white border-2 border-app-border hover:border-accent-green',
-    danger: 'bg-accent-red text-white hover:bg-accent-red/90 shadow-lg shadow-accent-red/30',
-    success: 'bg-accent-gold text-app-bg hover:bg-accent-gold/90 shadow-lg shadow-accent-gold/30',
+    primary: 'bg-gradient-green text-app-bg shadow-button hover:shadow-button-hover',
+    secondary: 'bg-app-card text-white border-2 border-app-border hover:border-accent-green shadow-card hover:shadow-card-hover',
+    danger: 'bg-gradient-red text-white shadow-red-button hover:shadow-red-button-hover',
+    success: 'bg-gradient-gold text-app-bg shadow-gold-button hover:shadow-gold-button-hover',
   };
 
   const sizes = {
